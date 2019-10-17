@@ -1,0 +1,22 @@
+{
+    "caseId": "{DynamicSql:select from cbk_cases where issuer_reference_number = '1234'}",
+    "array" : 
+    [
+        "{DynamicSql:select from cbk_cases where issuer_reference_number = '1234'}",
+        "{DynamicSql:select from cbk_cases where issuer_reference_number = '1234'}"
+    ],
+    "caseIdd": "{DynamicSql:select from cbk_cases where issuer_reference_number = '1234'}",
+    "activities":
+    [
+        {
+            "activityType":"FIRST_CHARGEBACK",
+            "fromQueue":"New",
+            "toQueue":"Merchant"
+        },
+        {
+            "activityType":"FIRST_CHARGEBACK",
+            "fromQueue":"New",
+            "toQueue":"Merchant"
+        }
+    ]
+}
